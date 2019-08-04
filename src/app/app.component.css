@@ -1,0 +1,65 @@
+.bg-image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -999;
+  /* The image used */
+  background-image: url("https://i.scdn.co/image/dbff462d80ff9801a1110db711302935fc427521");
+
+  /* Add the blur effect */
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+#main-image{
+  width: 100%;
+}
+
+.container{
+  display:flex;
+  justify-content:center;
+}
+
+.main-content {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 25px 10px 25px 10px;
+  background: rgb(27, 27, 27);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    width: 100%;
+    max-width: 768px;
+  }
+}
+
+img{
+  width: 125px;
+}
+
+li{
+  color: white;
+  padding: 20px;
+  height: 75px;
+  background: rgb(27, 27, 27);
+  border-top: 2px solid rgb(53, 53, 53);
+}
+
+li:hover{
+  background: rgb(40, 40, 40);
+  transition-duration: 300ms;
+}
