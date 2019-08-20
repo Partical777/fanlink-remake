@@ -34,10 +34,17 @@
   z-index: 1;
   text-align: center;
   width: 100%;
-  max-width: 350px;
+  max-width: 25vw;
   margin: 25px 10px 25px 10px;
   background: rgb(27, 27, 27);
   color: white;
+}
+
+@media (max-width: 992px) {
+  .main-content {
+    width: 100%;
+    max-width: 50vw;
+  }
 }
 
 @media (max-width: 768px) {
